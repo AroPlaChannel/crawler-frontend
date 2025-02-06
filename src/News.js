@@ -6,7 +6,7 @@ const News = () => {
   const [news, setNews] = useState([]);
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:5000/api/news')
+    axios.get('https://crawler-backend-whl4.onrender.com/api/news')
       .then(response => {
         setNews(response.data.map((item, index) => ({ title: item, rank: index + 1 })));
       })

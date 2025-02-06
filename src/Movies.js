@@ -9,7 +9,7 @@ const Movies = () => {
   const [directorData, setDirectorData] = useState([]);
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:5000/api/movies')
+    axios.get('https://crawler-backend-whl4.onrender.com/api/movies')
       .then(response => {
         setMovies(response.data);
         processMovieData(response.data);
