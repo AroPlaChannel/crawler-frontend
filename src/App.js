@@ -23,7 +23,7 @@ function App() {
               <Link to="/movies">豆瓣电影</Link>
             </Menu.Item>
             <Menu.Item key="3">
-              <Link to="/recognize">手写数字识别</Link>
+              <Link to="/recognize_digit">手写数字识别</Link>
             </Menu.Item>
           </Menu>
         </Header>
