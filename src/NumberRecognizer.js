@@ -68,6 +68,7 @@ const NumberRecognizer = () => {
 
     axios.post('/api/recognize_digit', { inputs })
       .then(response => {
+        console.log("Response data:", response.data);  // 检查响应数据
         setResult(response.data.label);
       })
       .catch(error => {

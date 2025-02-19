@@ -31,7 +31,7 @@ function App() {
           <Routes>
             <Route path="/news" element={<News />} />
             <Route path="/movies" element={<Movies />} />
-            <Route path="/recognize" element={<NumberRecognizer />} />
+            <Route path="/recognize_digit" element={<NumberRecognizer />} />
           </Routes>
         </Content>
       </Layout>
