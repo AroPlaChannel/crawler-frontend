@@ -66,7 +66,7 @@ const NumberRecognizer = () => {
       inputs.push(normalized);
     }
 
-    axios.post('/api/recognize_digit', { inputs }, {
+    axios.post('https://crawler-backend-whl4.onrender.com/api/recognize_digit', { inputs }, {
         headers: {
           'Content-Type': 'application/json'
         }
