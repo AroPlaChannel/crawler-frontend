@@ -66,7 +66,11 @@ const NumberRecognizer = () => {
       inputs.push(normalized);
     }
 
-    axios.post('/api/recognize_digit', { inputs })
+    axios.post('/api/recognize_digit', { inputs }, {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
       .then(response => {
         console.log("Response data:", response.data);  // 检查响应数据
         setResult(response.data.label);
